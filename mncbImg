@@ -1,0 +1,15 @@
+//minikube image of prjct
+-docker deamon must be on
+//minikube start in normal terminal
+-minikube status
+-for /f "tokens=*" %i in ('minikube -p minikube docker-env') do %i
+-cd webk -clone the webk from git
+-docker build -t webimg:v1 .
+-docker images
+-kubectl create namespace monitoring
+-cd k8s
+-kubectl apply -f deployment.yaml
+-kubectl apply -f service.yaml
+-kubectl get pods -n monitoring // ready 1/1
+-minikube service webapp-service -n monitoring --url
+//url click then image 
