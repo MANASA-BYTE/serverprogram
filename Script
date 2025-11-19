@@ -1,0 +1,88 @@
+//new item -name-pipeline
+//pipeline script select defalut alread
+//web script
+//-----
+//node {
+
+    stage('Clean Workspace') {
+        echo "Cleaning workspace..."
+        deleteDir()
+    }
+
+    stage('Clone Repo') {
+        echo "Cloning GitHub Repository..."
+        bat "git clone https://github.com/MANASA-BYTE/web.git"
+    }
+
+    stage('Build Web Application') {
+        echo "Building Web Application (Static HTML/JS)..."
+        // No build needed if your project is simple HTML/CSS/JS.
+        // If you have Node.js build, tell me and I will update it.
+    }
+
+    stage('Package Website') {
+        echo "Packaging web project into zip..."
+        bat """
+        cd web
+        powershell Compress-Archive -Path * -DestinationPath web.zip -Force
+        """
+    }
+
+    stage('Deploy to Local Folder') {
+        echo "Deploying web project to Jenkins deployment folder..."
+        bat """
+        if not exist C:\\deploy mkdir C:\\deploy
+        copy web\\web.zip C:\\deploy\\web.zip /Y
+        """
+    }
+
+    stage('Finished') {
+        echo "Web Application Pipeline Completed Successfully!"
+    }
+}
+//build 
+//java script
+//
+//pipeline {
+    agent any
+
+    tools {
+        maven 'MAVEN_HOME'
+    }
+
+    stages {
+
+        stage('Clean Workspace') {
+            steps {
+                deleteDir()
+            }
+        }
+
+        stage('Clone Repo & Clean') {
+            steps {
+                bat "git clone https://github.com/MANASA-BYTE/java.in.git"
+            }
+        }
+
+        stage('Install') {
+            steps {
+                bat "mvn install -f java.in/pom.xml"
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat "mvn test -f java.in/pom.xml"
+            }
+        }
+
+        stage('Package') {
+            steps {
+                bat "mvn package -f java.in/pom.xml"
+            }
+        }
+    }
+}
+
+//build after that
+
