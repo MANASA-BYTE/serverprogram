@@ -1,0 +1,13 @@
+//------awss
+//set the steps in the aws could rember toe marks the shttp --some stuff below the key-pair
+// copy the ssh key then paste in the floder wher your create pair download
+//sudo apt update
+//sudo apt-get install docker.io
+//git --version
+//git clone https://github.com/MANASA-BYTE/web.git
+//cd into the path /web
+//is dockerfile ther eare not?
+//create an image //sudo docker build -t img3 .
+//sudo docker run -d -p 80:80 img3
+// sudo docker ps
+//open in aws
