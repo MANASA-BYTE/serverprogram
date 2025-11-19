@@ -1,3 +1,6 @@
-//ngrok http 8888
+//ngrok http jenikisport
 /github-webhook/
-//build the 
+-application/json-save
+-jenikins joob -git rep0 articficates **/*
+-build 
+-next change in git build automatically
