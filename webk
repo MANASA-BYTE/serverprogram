@@ -4,3 +4,15 @@
 -jenikins joob -git rep0 articficates **/*
 -build 
 -next change in git build automatically
+
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+git config --list
+
+
+
