@@ -6,4 +6,10 @@ clone the prjct--web
   docker tag img 16ma/img:latest
   docker push 16ma/img:latest
   docker images--docker hub image 
+
+//-------------assign the port to the docker//
+//---React build:docker run -p 8080:80 react-image
+//---static HTML:-p 8080:80
+
+
   
