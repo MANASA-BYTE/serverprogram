@@ -4,7 +4,7 @@
 -minikube status
 -for /f "tokens=*" %i in ('minikube -p minikube docker-env') do %i
 -cd webk -clone the webk from git
--docker build -t webimg:v1 .
+inside the dir//--- -docker build -t webimg:v1 .
 -docker images
 -kubectl create namespace monitoring
 -cd k8s
