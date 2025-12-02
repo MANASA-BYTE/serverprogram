@@ -1,4 +1,4 @@
-clone the prjct--web
+clone the prjct--web //image creation and push into the hub -----------------
   also it as the docker file
   if not write the dockerfile
   inside the prjct cmd cd web---docker build -t img .
@@ -10,6 +10,14 @@ clone the prjct--web
 //-------------assign the port to the docker//
 //---React build:docker run -p 8080:80 react-image
 //---static HTML:-p 8080:80
+
+//----assign---port to the docker image 
+---inside the git clone web prjct
+docker build -t e .
+docker run -p 8000:80 e
+http://localhost:8000
+
+
 
 
   
