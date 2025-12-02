@@ -1,0 +1,9 @@
+clone the prjct--web
+  also it as the docker file
+  if not write the dockerfile
+  inside the prjct cmd cd web---docker build -t img .
+  cd..
+  docker tag img 16ma/img:latest
+  docker push 16ma/img:latest
+  docker images--docker hub image 
+  
