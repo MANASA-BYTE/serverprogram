@@ -35,4 +35,15 @@ docker compose ps
 docker compose down
 
 //-----------------------------------------------------------------------------
+//images compose file---
+services:
+  external:
+    image: 16ma/external
+    ports:
+      - "9010:80"     # open in http://localhost:9010
 
+  webapp:
+    image: 16ma/webapp
+    ports:
+      - "9020:80"   # open in http://localhost:9020
+//------------------------------------------------------------------------------------------
