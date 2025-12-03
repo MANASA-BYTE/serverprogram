@@ -30,4 +30,18 @@ git commit -m"local"
 //open gitrepo add file some txy save it
 //now git pull --ff-only 
 fastforward aborting 
-//------------------------
+//------------------------------------------------------------------------------------------------
+Go to GitHub → New Organization
+Click Create a free organization
+Fill details → name, email
+Add team members
+Change permissions:
+Settings → Member privileges → Base permissions → Write
+Projects → Base permission → Write
+Create a repository inside the organization
+Invite team members (they must accept)
+Go to repo → Settings → Collaborators
+Click Add People
+Enter GitHub username
+Collaborator-2 receives invitation → must accept
+//-----------------------------------------------------------------------------------------------------
