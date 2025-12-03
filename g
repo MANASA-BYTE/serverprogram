@@ -1,3 +1,19 @@
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --global user.name "Manasa-Byte"
+git config --global user.email "manasamyakala35@gmail.com"
+
+git credential-manager-core erase
+
+git remote -v
+git remote set-url origin https://github.com/Manasa-Byte/your_repo.git
+
+git push -u origin main
+git remote -v
+
+//------------------------
+
 git status
 git checkout branch 
 git branch 
